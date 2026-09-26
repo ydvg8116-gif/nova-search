@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Search</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP NAVIGATION -->
+    <header class="top-bar">
+
+        <div class="logo">
+            <span>✦</span> Nova
+        </div>
+
+        <div class="top-actions">
+
+            <button id="themeBtn" title="Change theme">
+                🌙
+            </button>
+
+            <button id="settingsBtn" title="Settings">
+                ⚙️
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="main-container">
+
+        <div class="hero">
+
+            <div class="hero-icon">
+                ✦
+            </div>
+
+            <h1>
+                Search the Web
+            </h1>
+
+            <p>
+                Fast, simple and smarter searching.
+            </p>
+
+
+            <!-- SEARCH BOX -->
+            <div class="search-box">
+
+                <span class="search-icon">
+                    🔍
+                </span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search anything..."
+                    autocomplete="off"
+                >
+
+                <button
+                    id="voiceBtn"
+                    title="Voice Search"
+                >
+                    🎤
+                </button>
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- SUGGESTIONS -->
+            <div
+                id="suggestions"
+                class="suggestions"
+            ></div>
+
+
+            <!-- SEARCH HISTORY -->
+            <section
+                id="historySection"
+                class="history-section"
+            >
+
+                <div class="history-header">
+
+                    <h2>
+                        🕘 Search History
+                    </h2>
+
+                    <button id="clearHistoryBtn">
+                        🧹 Clear All
+                    </button>
+
+                </div>
+
+                <div id="historyContainer">
+
+                    <p class="empty-history">
+                        No searches yet
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- SEARCH RESULTS -->
+            <section
+                id="resultsSection"
+                class="results-section"
+            >
+
+                <div class="results-header">
+
+                    <h2>
+                        Search Results
+                    </h2>
+
+                    <span id="resultCount"></span>
+
+                </div>
+
+                <div id="resultsContainer"></div>
+
+            </section>
+
+
+            <!-- QUICK LINKS -->
+            <div class="quick-section">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <div class="quick-links">
+
+                    <a
+                        href="https://www.google.com"
+                        target="_blank"
+                    >
+                        <span>G</span>
+                        Google
+                    </a>
+
+                    <a
+                        href="https://www.youtube.com"
+                        target="_blank"
+                    >
+                        <span>▶</span>
+                        YouTube
+                    </a>
+
+                    <a
+                        href="https://www.github.com"
+                        target="_blank"
+                    >
+                        <span>⌘</span>
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://www.wikipedia.org"
+                        target="_blank"
+                    >
+                        <span>W</span>
+                        Wikipedia
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- TIME -->
+            <div class="time-card">
+
+                <div id="time">
+                    00:00:00
+                </div>
+
+                <div id="date">
+                    Loading date...
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <span>
+            Nova Search
+        </span>
+
+        <span>
+            Made with ❤️ using HTML, CSS & JavaScript
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
